@@ -23,7 +23,7 @@ class SmartCalculator {
      return this;
   }
   valueOf(){
-    let finalValue = eval(this.value);
+    let finalValue = JSON.parse(this.value);
     return finalValue;
   }
 }
